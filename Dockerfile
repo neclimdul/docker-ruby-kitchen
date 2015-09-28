@@ -21,4 +21,5 @@ RUN rm *.deb && \
 
 # Install berkshelf
 # We know we're going to use it and it gets a lot of the native deps out of the way.
-RUN USE_SYSTEM_GECODE=1 gem install berkshelf
+RUN USE_SYSTEM_GECODE=1 gem install berkshelf && \
+  gem install foodcritic rubocop test-kitchen chefspec
