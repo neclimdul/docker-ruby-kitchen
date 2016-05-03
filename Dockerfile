@@ -6,7 +6,6 @@ RUN apk update && \
     apk -U add git
 
 # cleanup after ourselves
-RUN rm *.deb && \
-  apt-get clean && \
-  rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/* && \
+RUN rm -rf /tmp && \
+  rm -rf /var/cache/apk/* && \
   truncate -s 0 /var/log/*log
