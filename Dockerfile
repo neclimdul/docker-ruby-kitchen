@@ -1,8 +1,9 @@
 FROM ruby:2.1-alpine
 MAINTAINER James Gilliland <jgilliland@apqc.org>
 
-RUN apt-get update && \
-  apt-get install -y -q git
+RUN apk update && \
+    apk upgrade && \
+    apk -U add git
 
 # cleanup after ourselves
 RUN rm *.deb && \
