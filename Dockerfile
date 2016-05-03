@@ -5,6 +5,7 @@ RUN apk update && \
     apk upgrade && \
     apk -U add build-base \
       git \
+      openssh-client \
       libxml2-dev \
       libxslt-dev && \
     rm -rf /tmp/* && \
