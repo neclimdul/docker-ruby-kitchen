@@ -7,7 +7,8 @@ RUN apk update && \
       git \
       openssh-client \
       libxml2-dev \
-      libxslt-dev && \
+      libxslt-dev \
+      dmidecode && \
     rm -rf /tmp/* && \
     rm -rf /var/cache/apk/* && \
     truncate -s 0 /var/log/*log
