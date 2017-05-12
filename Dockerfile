@@ -1,4 +1,4 @@
-FROM ruby:2.2-alpine
+FROM ruby:2.4-alpine
 MAINTAINER James Gilliland <jgilliland@apqc.org>
 
 RUN apk update && \
